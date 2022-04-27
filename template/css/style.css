@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding:0;
+}
+main{
+    margin-top: 110px;
+}
+/* Header hissesi */
+header{
+    background-color: #051643;
+}
+/* header end */
+
+#slider img{
+    max-height: 67vh;
+
+}
+
+/*
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  */
+@media(max-width: 992px){
+    .social{
+        text-align: center;
+    }
+}
+
+.nav-link{
+    font-size: 1.2em;
+}
+.ico{
+    font-size: 1.2em;
+    margin: 0 5px;
+    color: rgba(255,255,255,0.8);
+}
+.nav-item{
+    color: rgba(255, 255, 255, 0.922);
+}
+.nav-link{
+    text-align:center;
+    color: rgba(255, 255, 255, 0.8);
+}
+@media(max-width:576px){
+    .logo{
+        max-width: 80%;
+    }
+    
+}
