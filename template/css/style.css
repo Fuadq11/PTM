@@ -1,6 +1,21 @@
+@font-face {
+    font-family: headfont;
+    src: url("../font/AvantGarde.otf");
+  }
 *{
     margin: 0;
     padding:0;
+}
+.news_head{
+    font-family: headfont;
+    text-transform: uppercase;
+}
+.btn-color{
+    background-color: #051643 !important;
+}
+.carousel-item img{
+    filter: saturate(200%) brightness(60%) opacity(90%);
+   -webkit-filter: saturate(200%) brightness(60%) opacity(90%);
 }
 main{
     margin-top: 110px;
@@ -9,14 +24,28 @@ main{
 header{
     background-color: #051643;
 }
+
+.lang select{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.lang select:hover{
+    cursor: pointer;
+}
+
+.lang option{
+    background-color: #051643;
+    color: #fff;
+    border: none;
+}
+
+
 /* header end */
 
 #slider img{
-    max-height: 67vh;
+    max-height: 80vh;
 
-}
-.card{
-    background-color: red;
 }
 .custom_card{
     box-shadow: 0 0 20px 8px grey;
@@ -57,5 +86,9 @@ header{
     .logo{
         max-width: 80%;
     }
-    
+}
+@media(min-width: 993px){
+    .card{
+        max-width: 20rem;
+    }
 }

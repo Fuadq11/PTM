@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PTM</title>
     
-    <link rel="stylesheet" href="css/style.css"  type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
         <header class="fixed-top">
             <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark navbar-toggler-right">
-                <a class="logo" href="#"><img class="logo" src="img/logo.png" alt="PTM loqo" style="filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(163deg) brightness(106%) contrast(102%);" ></a>
+                <a class="logo" href="#"><img class="logo" src="img/logo.png" alt="PTM loqo" width="300"></a>
                 <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,6 +45,12 @@
                       </svg></a>
 
                     </div>
+                    <div class="lang ml-3 mt-1">
+                      <select name="" id="">
+                        <option value="">AZ</option>
+                        <option value="">EN</option>
+                      </select>
+                    </div>
                 </div>
               </nav>
             </div>
@@ -60,6 +66,7 @@
                           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
+                          <div class="back-black d-block">
                           <div class="carousel-item active">
                             <img src="img/1.jpeg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -68,6 +75,7 @@
                             </div>
                           </div>
                           <div class="carousel-item">
+                           
                             <img src="img/2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                               <h5>Second slide label</h5>
@@ -82,6 +90,7 @@
                             </div>
                           </div>
                         </div>
+                      </div>
                         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="sr-only">Previous</span>
@@ -100,7 +109,7 @@
               <div class="row">
                 <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12" > 
                   <div class="son_xeberler">
-                    <h1>Xəbərlər</h1>
+                    <h1 class="news_head">Xəbərlər</h1>
                   <div class="row">
                     <div class="col-xl-6 col-lg-6 col-sm-12  mb-5" >
                   <div class="card" style="box-shadow: 0 0 10px 4px grey;transition: all .7s;">
@@ -115,7 +124,7 @@
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-sm-12  mb-5" >
-                  <div class="custom_card">
+                
                   <div class="card" style="box-shadow: 0 0 10px 4px grey;transition: all .7s;">
                     <a href="#">
                     <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
@@ -126,13 +135,13 @@
                     </div>
                   </a>
                   </div>
-                </div>
+               
                 </div>
                 </div>
               </div>
               </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                  <h1>Elanlar</h1>
+                  <h1 class="news_head">Elanlar</h1>
                   <div class="umumi_xeberler" style="padding: 0 15px; overflow: auto;height:25rem">
                   <div class="row">
                     <div class="col-12 text-center">
@@ -176,8 +185,46 @@
               </div>
             </div>
             </section>
-           <section id="haqqimmizda">
-
+           <section id="Tədris">
+             <div class="container">
+              <h1 align="center" class="mb-5 mt-5">İxtisaslar</h1>
+              <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  mb-5">
+                  <div class="card">
+                    <img class="card-img-top" src="img/i1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Veb dizayn və proqram təminatı qrupu</h5>
+                      <p class="card-text">Peşəkar müəllim heyyəti və dərs proqramı üçün keçid edərək tanış ola bilərsiz</p>
+                      <a href="#" class="btn btn-primary btn-color">Ətraflı...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  mb-5">
+                  <div class="card">
+                    <img class="card-img-top" src="img/i2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">	Proqramla idarə olunan dəzgahların operatoru</h5>
+                      <p class="card-text">Peşəkar müəllim heyyəti və dərs proqramı üçün keçid edərək tanış ola bilərsiz</p>
+                      <a href="#" class="btn btn-primary btn-color">Ətraflı...</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12  mb-5">
+                  <div class="card">
+                    <img class="card-img-top" src="img/i3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Elektrik avadanlıqlarına xidmət və təmir üzrə elektrik montyoru</h5>
+                      <p class="card-text">Peşəkar müəllim heyyəti və dərs proqramı üçün keçid edərək tanış ola bilərsiz</p>
+                      <a href="#" class="btn btn-primary btn-color">Ətraflı...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 text-center ">
+                <a href="#" class="btn btn-primary btn-lg active mx-auto btn-color" role="button" aria-pressed="true">İxtisaslar haqqında daha ətraflı</a>
+              </div>
+             
+            </div>
            </section>
             
         </main>
