@@ -6,6 +6,15 @@
     margin: 0;
     padding:0;
 }
+
+.custom-card-news{
+  box-shadow: rgba(5, 22, 67, 0.40) 0px 5px 15px 1px, rgba(5, 22, 67, 0.70) 0px 4px 25px 1px;
+  transition: 0.8s;
+}
+.custom-card-news:hover{
+  cursor: pointer;
+  box-shadow: rgba(5, 22, 67, 0.80) 0px 5px 15px 2px, rgba(5, 22, 67, 0.90) 0px 4px 25px 2px;
+}
 .news_head{
     font-family: headfont;
     text-transform: uppercase;
@@ -40,7 +49,21 @@ header{
     border: none;
 }
 
-
+.nav-link{
+  font-size: 1.2em;
+}
+.ico{
+  font-size: 1.2em;
+  margin: 0 5px;
+  color: rgba(255,255,255,0.8);
+}
+.nav-item{
+  color: rgba(255, 255, 255, 0.922);
+}
+.nav-link{
+  text-align:center;
+  color: rgba(255, 255, 255, 0.8);
+}
 /* header end */
 
 #slider img{
@@ -62,6 +85,127 @@ header{
  
   
 }
+
+.news-btn{
+  color:#051643;
+  font-weight:700;
+  transition: 1s;
+}
+.news-btn:hover{
+  text-decoration: none;
+  color:#051643;
+  margin-left: 15px;
+}
+.news-date-ico{
+  margin-top: -5px;
+}
+/*  News page bottombar pagination  */
+
+
+.panel-footer {
+  border-radius: 0;
+  margin: 20px 0;
+}
+.bottombar {
+  text-align: center !important;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  padding-left: 0;
+  padding-right: 0;
+  font-family: 'Lato';
+}
+.previousButton {
+  cursor: pointer;
+  color: #1d3349;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  padding: 12px 10px;
+  border: 1px solid #dee2e6;
+}
+.nextButton {
+  justify-content: flex-end;
+  cursor: pointer;
+  color: #1d3349;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 12px;
+  border: 1px solid #dee2e6;
+  padding: 12px 10px;
+}
+
+.pagination-wrapper {
+  padding: 8px;
+  display: inline-flex;
+  overflow-x: hidden;
+}
+.bottombar .pagination {
+  white-space: nowrap;
+  width: 70%;
+  overflow-x: auto;
+  border-radius: 0 !important;
+  height: 44px;
+  display: inline-block;
+  padding-left: 0;
+  list-style: none;
+}
+.bottombar ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  overflow: hidden !important;
+
+
+}
+.bottombar .pagination li {
+  display: inline-block;
+  margin: 0 2px;
+}
+.bottombar .bottombar-pages {
+  width: 35px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center !important; 
+  margin-left: -3px;
+  padding: 10px 0;
+  font-family: 'Avenir-Medium';
+  color: #1d3349;
+  border: 1px solid #dee2e6;
+  transition: 0.8s;
+  -webkit-font-smoothing: antialiased;
+}
+.bottombar .bottombar-pages:hover {
+  background: rgba(5, 22, 67, 0.6);
+  color: white;
+  border: none;
+}
+.bottombar-highlight{
+  background-color: #051643;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+.bottombar .backscroll, .bottombar .forwardscroll {
+  padding: 6px 0;
+  margin: 0 !important;
+  background: none !important;
+  width: 34px;
+  font-size: 22px;
+  height: 44px;
+  cursor: pointer;
+  opacity: 0.6;
+  color: rgba(0, 0, 0, 1);
+ 
+
+}
+.bottombar .backscroll:hover, .bottombar .forwardscroll:hover {
+  opacity: 1;
+}
+.bottombar .backscroll{
+margin-left: 5px;
+}
+
+/* End of bootombar pagination */
+
 /*
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -84,7 +228,7 @@ footer{
   
   }
   .container-footer{
-    width: 84%;
+    width: 86.6%;
     margin: auto;
   
   }
@@ -185,34 +329,25 @@ footer{
     color: #bfbfbf;
   }
 /***************** End of   SECTION Footer    *************/
+
 @media(max-width: 992px){
     .social{
         text-align: center;
     }
+    .card{
+      max-width: 20rem;
+  }
 }
 
-.nav-link{
-    font-size: 1.2em;
-}
-.ico{
-    font-size: 1.2em;
-    margin: 0 5px;
-    color: rgba(255,255,255,0.8);
-}
-.nav-item{
-    color: rgba(255, 255, 255, 0.922);
-}
-.nav-link{
-    text-align:center;
-    color: rgba(255, 255, 255, 0.8);
-}
+
 @media(max-width:576px){
     .logo{
         max-width: 80%;
     }
+    .bottombar ul {
+      overflow-x: auto !important;
+    }
 }
 @media(min-width: 993px){
-    .card{
-        max-width: 20rem;
-    }
+   
 }
