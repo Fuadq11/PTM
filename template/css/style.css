@@ -50,6 +50,9 @@ color: rgba(255, 255, 255, 0.922);
 text-align:center;
 color: rgba(255, 255, 255, 0.8);
 }
+.navbar-toggler{
+  margin-right: -17px;
+}
 /* header end */
 .custom-card-news{
   box-shadow: rgba(5, 22, 67, 0.40) 0px 5px 15px 1px, rgba(5, 22, 67, 0.70) 0px 4px 25px 1px;
@@ -112,6 +115,21 @@ main{
 .news-date-ico{
   margin-top: -5px;
 }
+.news-time i{
+  color:#051643;
+}
+.box-shadow-custom{
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  -webkit-box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+}
+.news-content{
+    font-size: 1.35rem!important;
+    line-height: 1.76!important;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
 /*  News page bottombar pagination  */
 
 
@@ -408,7 +426,7 @@ margin-left: 5px;
   margin-top: 110px;
 }
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+#main-apply input[type=text], #main-apply select,#main-apply textarea{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -424,7 +442,7 @@ label {
 }
 
 /* Style the submit button */
-input[type=submit] {
+#main-apply input[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -599,7 +617,7 @@ footer{
       overflow-x: auto !important;
     }
     .container-custom{
-      width: 92%;
+      
     }
     .card{
       width: 100%;
