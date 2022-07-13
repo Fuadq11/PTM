@@ -1,31 +1,34 @@
+<?php
 
+	require_once "./lang/lang.php";
+?>
 <header class="fixed-top">
             <div class="container-custom">
             <nav class="navbar navbar-expand-lg navbar-dark navbar-toggler-right">
-                <a class="logo" href="#"><img class="logo" src="img/logo.png" alt="PTM loqo" width="300"></a>
+                <a class="logo" href="?mode=main"><img class="logo" src="img/<?=$lang['logo']?>.png" alt="PTM loqo" width="300"></a>
                 <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse text-align-center" id="navbarToggler">
                   
                   <ul id="nav-container" class="custom-nav navbar-nav mr-auto mt-2 ml-lg-5 mt-lg-0 justify-content-center">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Ana səhifə <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="?mode=main"><?=$lang['header_main']?><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Xəbərlər</a>
+                      <a class="nav-link" href="?mode=news"><?=$lang['header_news']?></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">İxtisaslar</a>
+                      <a class="nav-link" href="?mode=faculty"><?=$lang['header_speciality']?></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Haqqımızda</a>
+                      <a class="nav-link" href="?mode=about"><?=$lang['header_about']?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Əlaqə</a>
+                        <a class="nav-link" href="?mode=contact"><?=$lang['header_contact']?></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Müraciət</a>
+                        <a class="nav-link" href="?mode=apply"><?=$lang['header_apply']?></a>
                       </li>
                   </ul>
                     <div class="social">
@@ -38,9 +41,9 @@
 
                     </div>
                     <div class="lang ml-3 mt-1 text-center">
-                      <select name="" id="">
-                        <option value="">AZ</option>
-                        <option value="">EN</option>
+                      <select name="lang" id="lang" onChange="update()">
+                        <option value="az">AZ</option>
+                        <option value="en">EN</option>
                       </select>
                     </div>
                 </div>

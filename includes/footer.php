@@ -1,3 +1,6 @@
+<?php
+	require_once "./lang/lang.php";
+?>
     <!-- start of Footer -->
     <footer>
       <section id="top-footer">
@@ -5,19 +8,19 @@
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mt-5">
                   <div class="item">
-                  <a href="#"> <img class="logo-img" src="img/logo.png"/> </a>
+                  <a href="#"> <img class="logo-img" src="img/<?=$lang['logo']?>.png"/> </a>
                   <form class="" action="index.html" method="post">
-                    <h4 class="form-label">Yeni məlumatlardan xəbərdar olmaq üçün abunə olun</h4>
+                    <h4 class="form-label"><?=$lang['footer_apply_head']?></h4>
                     <div class="section-name">
-                      <label class="label-form" for="">Ad <span style="color: red; font-size: 20px;font-weight:200;">*</span></label>
+                      <label class="label-form" for=""><?=$lang['footer_apply_name']?> <span style="color: red; font-size: 20px;font-weight:200;">*</span></label>
                       <input class="form-control" type="text" name="" value="">
                     </div>
                     <div class="section-email mt-2">
-                      <label class="label-form" for="">Email <span style="color: red; font-size: 20px;font-weight:200;">*</span></label>
+                      <label class="label-form" for=""><?=$lang['footer_apply_email']?> <span style="color: red; font-size: 20px;font-weight:200;">*</span></label>
                       <input class="form-control" type="text" name="" value="">
                     </div>
 
-                    <button type="submit" name="button" class="mt-3">Abunə ol</button>
+                    <button type="submit" name="button" class="mt-3"><?=$lang['footer_apply_subscribe']?></button>
                   </form>
                 </div>
               </div>
@@ -25,7 +28,7 @@
               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mt-5">
                 <div class="item" style=" border-left: 1px solid #fff;">
                   <div class="divide">
-                    <h4>İxtisaslar</h4>
+                    <h4 style="text-transform: uppercase;"><?=$lang['footer_titles_faculty']?></h4>
                     <a href="#">Veb dizayner və proqram təminatı</a>
                     <a href="#">Qrafik dizayner</a>
                     <a href="#">Avtomatika və Elektronika</a>
@@ -33,7 +36,7 @@
                     <a href="#">Proqramlaşdırma</a>
                   </div>
                   <div class="divide mt-5">
-                    <h4>MÜRACİƏT</h4>
+                    <h4 style="text-transform: uppercase;"><?=$lang['footer_titles_apply']?></h4>
                     <a href="#">Necə müraciət etməli</a>
                     <a href="#">Konsultasiya</a>
                     <a href="#">Lazım olan sənədlər</a>
@@ -45,7 +48,7 @@
               <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mb-5 mt-5">
                 <div class="item" style=" border-left: 1px solid #fff;padding-bottom: 10px;">
                   <div class="divide">
-                    <h4>HAQQIMIZDA</h4>
+                    <h4 style="text-transform: uppercase;"><?=$lang['footer_titles_about']?></h4>
                     <a href="#">Peşə Təhsil Mərkəzi haqqında</a>
                     <a href="#">İxtisaslar haqqında</a>
                     <a href="#">İnfrasturktur</a>
@@ -53,7 +56,7 @@
                     <a href="#">FAQ</a>
                   </div>
                   <div class="divide mt-5">
-                    <h4>QISA KEÇİDLƏR</h4>
+                    <h4 style="text-transform: uppercase;"><?=$lang['footer_titles_shortlinks']?></h4>
                     <a href="#">Partner şirkətlər</a>
                     <a href="#">Bizimlə işləmək</a>
                     <a href="#">Gizlilik</a>
@@ -69,7 +72,7 @@
           <div class="row">
             <div class="footer-info col-lg-10 col-xl-10 col-md-10 col-sm-12 ">
               <div class="subft d-flex justify-content-sm-center justify-content-md-center justify-content-lg-start justify-content-xl-start">
-                <p><a href="#">&copy; Peşə Təhsil Mərkəzi</a>  &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;  Bütün hüquqlar qorunur &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; Veb Sayt Mərkəz tərəfindən hazırlanmışdır. Bütün məlumatlar sayta yerləşdirimişdir</p>
+                <p><a href="#">&copy; <?=$lang['footer_subtitles_vet']?></a>  &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;  <?=$lang['footer_subtitles_rights']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<?=$lang['footer_subtitles_details']?></p>
               </div>
             </div>
             <div class="footer-social col-lg-2 col-xl-2 col-md-2 col-sm-12" >
